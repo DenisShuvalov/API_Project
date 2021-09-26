@@ -1,8 +1,10 @@
+# 1. Посмотреть документацию к API GitHub, разобраться как вывести список репозиториев для конкретного пользователя,
+# сохранить JSON-вывод в файле *.json.
+
 import json
 import requests
 
-
-username = input(str("Введите имя пользователя:")) # DenisShuvalov
+username = input(str("Введите имя пользователя:"))  # DenisShuvalov
 url = f'https://api.github.com/users/{username}/repos'
 
 responce = requests.get(url)
